@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #00ff41;
+  --accent-color: #00ff41;
+  --dim-color: #003b11;
+  --error-color: #ff3e3e;
+  --font-family: 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  padding: 0.5rem;
+  outline: none;
+  width: 100%;
+}
+
+.terminal-window {
+  border: 1px solid var(--accent-color);
+  margin: 1rem;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+}
+
+.terminal-header {
+  border-bottom: 1px solid var(--accent-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-badge {
+  padding: 2px 8px;
+  border: 1px solid var(--accent-color);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.citation-card {
+  border: 1px solid var(--dim-color);
+  background: rgba(0, 59, 17, 0.05);
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.citation-card:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px var(--accent-color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dim-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
