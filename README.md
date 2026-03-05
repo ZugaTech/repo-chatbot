@@ -14,33 +14,33 @@ A production-ready web application to chat with any public GitHub repository usi
 
 ```text
 [ Frontend (React) ] <-> [ Backend (FastAPI) ] <-> [ ChromaDB ]
-                               |
-                               v
-                        [ GitHub Repo ]
-                        [ OpenAI API  ]
+ |
+ v
+ [ GitHub Repo ]
+ [ OpenAI API ]
 ```
 
 ## Quick Start
 
 1. **Clone this repository**:
-   ```bash
-   git clone https://github.com/your-username/repo-chatbot.git
-   cd repo-chatbot
-   ```
+ ```bash
+ git clone https://github.com/your-username/repo-chatbot.git
+ cd repo-chatbot
+ ```
 
 2. **Configure Environment**:
-   Copy `.env.example` to `.env` and add your OpenAI API key.
-   ```bash
-   cp .env.example .env
-   ```
+ Copy `.env.example` to `.env` and add your OpenAI API key.
+ ```bash
+ cp.env.example.env
+ ```
 
 3. **Launch with Docker Compose**:
-   ```bash
-   docker-compose up --build
-   ```
+ ```bash
+ docker-compose up --build
+ ```
 
 4. **Access the App**:
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Tech Stack
 
