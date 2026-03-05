@@ -31,7 +31,7 @@ A production-ready web application to chat with any public GitHub repository usi
 2. **Configure Environment**:
  Copy `.env.example` to `.env` and add your OpenAI API key.
  ```bash
- cp.env.example.env
+ cp .env.example .env
  ```
 
 3. **Launch with Docker Compose**:
