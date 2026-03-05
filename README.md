@@ -1,6 +1,6 @@
-# Repo Chatbot (RAG)
+﻿# Repo Chatbot (RAG)
 
-A production-ready web application to chat with any public GitHub repository using natural language. Built with FastAPI, React, ChromaDB, and OpenAI.
+A production-ready web application to chat with any public GitHub repository using natural language. Built with FastAPI, React, ChromaDB and OpenAI.
 
 ## Features
 
